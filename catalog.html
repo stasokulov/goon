@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Каталог</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/libs/slick.min.css">
+	<link rel="stylesheet" href="./css/libs/slick-theme.min.css">
+	<link rel="stylesheet" href="./css/libs/mCustomScrollbar.min.css"/>
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/jquery.smoothscroll.min.js"></script>
+	<script src="./js/libs/slick.min.js"></script>
+	<script src="./js/libs/mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/libs/jquery.switchPopup.min.js"></script>
+	<script src="js/common.min.js"></script>
+</head>
+<body>
+<header class="header container">
+	<div class="header__content">
+		<a href="./home.html">
+			<img class="header__logo" src="./img/logo.png">
+		</a>
+		<nav class="header__nav">
+			<a class="header__nav-item" href="./catalog.html">Каталог</a>
+			<a class="header__nav-item" href="./reviews.html">Отзывы</a>
+			<a class="header__nav-item" href="./discount.html">Акции и где купить</a>
+			<a class="header__nav-item" href="./articles.html">Статьи</a>
+			<a class="header__nav-item" href="./about.html">О бренде</a>
+		</nav>
+		<div class="header__social social">
+			<div class="social__title">Мы в социальных сетях</div>
+			<div class="social__set">
+				<a href="https://www.instagram.com/goonrussia/" target="blank" class="social__icon-wrap">
+					<div class="social__icon social__icon_insta"></div>
+				</a>
+				<a href="https://vk.com/goonrussia" target="blank" class="social__icon-wrap">
+					<div class="social__icon social__icon_vk"></div>
+				</a>
+				<a href="https://www.facebook.com/goonrussia" target="blank" class="social__icon-wrap">
+					<div class="social__icon social__icon_fb"></div>
+				</a>
+			</div>
+		</div>
+		<div class="header__burger js-tgl-dropdown-menu">
+			<button class="burger"></button>
+			<button class="burger-close"></button>
+		</div>
+	</div>
+</header>
+<main>
+	<nav class="breadcrumb container">
+		<a class="breadcrumb__item breadcrumb__item_first" href="./home.html">Главная</a>
+		<a class="breadcrumb__item" href="./catalog.html">Каталог</a>
+	</nav>
+	<div class="catalog-page">
+		<section class="catalog-heading container">
+			<h1 class="catalog-heading__header h1">Каталог</h1>
+			<div class="catalog-heading__title-row">
+				<div class="catalog-heading__title-col">
+					<div class="catalog-heading__slogan">
+						Ознакомьтесь с полной таблицей размеров подгузников Goo.n
+						и подберите размер наиболее подходящий вашему малышу
+					</div>
+					<a class="catalog-heading__link btn btn_color_bright-2">Подробнее</a>
+				</div>
+				<div class="catalog-heading__img-wrap">
+					<img class="catalog-heading__img" src="./content/catalog/heading-img.png">
+				</div>
+			</div>
+			<div class="catalog-heading__filters">
+				<select class="catalog-heading__select input select select_light">
+					<option disabled selected>Вес ребенка</option>
+					<option value="Эта строка отправится на сервер">1</option>
+					<option value="Эта строка отправится на сервер">2</option>
+					<option value="Эта строка отправится на сервер">3</option>
+				</select>
+				<select class="catalog-heading__select input select select_light">
+					<option disabled selected>Тип подгузника</option>
+					<option value="Эта строка отправится на сервер">1</option>
+					<option value="Эта строка отправится на сервер">2</option>
+					<option value="Эта строка отправится на сервер">3</option>
+				</select>
+				<select class="catalog-heading__select input select select_light">
+					<option disabled selected>Линейка</option>
+					<option value="Эта строка отправится на сервер">1</option>
+					<option value="Эта строка отправится на сервер">2</option>
+					<option value="Эта строка отправится на сервер">3</option>
+				</select>
+				<a href="#" class="catalog-products__more-button btn btn_color_bright-1" hidden>Очистить</a>
+			</div>
+		</section>
+		<section class="catalog-page__products catalog-products container">
+			<div class="catalog-products__custom-buttons catalog-products__custom-buttons_bottom">
+				<button class="catalog-products__custom-button catalog-products__custom-button_prev">Предыдущий</button>
+				<div class="catalog-products__custom-dots catalog-products__custom-dots_1 custom-dots slider_light-dots"></div>
+				<button class="catalog-products__custom-button catalog-products__custom-button_next">Следующий</button>
+			</div>
+			<div class="catalog-products__slider slider slider_light-dots">
+				<div class="catalog-products__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_1">Премиум</div>
+					<div class="content-block__bg-img content-block__bg-img_orange"></div>
+					<div class="catalog-products__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog-products__title h3">Подгузники GOO.N</h3></a>
+						<span class="catalog-products__subtitle">Остаются сухими надолго</span>
+					</div>
+					<div class="catalog-products__stars">
+						<div class="catalog-products__stars-set">
+							<ul class="stars">
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+							</ul>
+							<span class="catalog-products__stars-count catalog-products__stars-count_orange">5/5</span>
+						</div>
+						<span class="catalog-products__stars-review">На основе 182 отзывов</span>
+					</div>
+					<div class="catalog-products__img-wrap">
+						<a href="#"><img class="catalog-products__img" src="./content/catalog/slider-products/slide1.png"></a>
+					</div>
+					<div class="catalog-products__subslider-wrap">
+						<div id="catalog_prod-1" class="catalog-products__subslider">
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product1/slide1.png"></a>
+								<div class="catalog-products__subslide-text">
+									Новый быстро впиты- вающий суперабсорбент обеспечивает сухость и комфорт коже малыша надолго
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product1/slide2.png"></a>
+								<div class="catalog-products__subslide-text">
+									Рельефная поверхность SARA SARA способствует циркуляции воздуха и предотвращает натирания и опрелости
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product1/slide3.png"></a>
+								<div class="catalog-products__subslide-text">
+									Воздухопроводимые материалы позволяют коже дышать даже после наполнения подгузника
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-products__sizes">
+						<div class="catalog-products__sizes-title">
+							Кликните на нужный вас размер, чтобы получить больше информации
+						</div>
+						<div class="diapers-sizes">
+							<a href="#" class="diapers-sizes__header">
+								<span>Размер</span>
+								<span>Кг</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">NB</span>
+								<span class="diapers-sizes__weight">~5</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect diapers-sizes__tile_active">
+								<span class="diapers-sizes__size">S</span>
+								<span class="diapers-sizes__weight">4-8</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">M</span>
+								<span class="diapers-sizes__weight">6-11</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">L</span>
+								<span class="diapers-sizes__weight">9-14</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XL</span>
+								<span class="diapers-sizes__weight">12-20</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-products__note">
+						<span class="catalog-products__note-main">Среднее количество* подгузников в день для этого размера: 6-8 штук</span>
+						<span class="catalog-products__note-second">*количество может быть индивидуальным</span>
+					</div>
+					<div class="catalog-products__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog-products__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_1">Премиум</div>
+					<div class="content-block__bg-img content-block__bg-img_orange"></div>
+					<div class="catalog-products__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog-products__title h3">Подгузники-трусики Goo.N</h3></a>
+						<span class="catalog-products__subtitle">Остаются сухими надолго</span>
+					</div>
+					<div class="catalog-products__stars">
+						<div class="catalog-products__stars-set">
+							<ul class="stars">
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item stars__item_orange"></li>
+								<li class="stars__item"></li>
+							</ul>
+							<span class="catalog-products__stars-count catalog-products__stars-count_orange">4/5</span>
+						</div>
+						<span class="catalog-products__stars-review">На основе 182 отзывов</span>
+					</div>
+					<div class="catalog-products__img-wrap">
+						<a href="#"><img class="catalog-products__img" src="./content/catalog/slider-products/slide2.png"></a>
+					</div>
+					<div class="catalog-products__subslider-wrap">
+						<div class="catalog-products__subslider">
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product2/slide1.png"></a>
+								<div class="catalog-products__subslide-text">
+									Высокий эластичный поясок обеспечивает лучшую посадку, а мягкие резиночки не давят на ножки и животик
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product1/slide2.png"></a>
+								<div class="catalog-products__subslide-text">
+									Новый быстро впиты- вающий суперабсорбент обеспечивает сухость и комфорт коже малыша надолго
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product1/slide3.png"></a>
+								<div class="catalog-products__subslide-text">
+									Высокие манжеты вокруг ножек плотно прилегают, обеспечивая дополни- тельную защиту от протеканий
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-products__sizes">
+						<div class="catalog-products__sizes-title">
+							Кликните на нужный вас размер, чтобы получить больше информации
+						</div>
+						<div class="diapers-sizes">
+							<a href="#" class="diapers-sizes__header">
+								<span>Размер</span>
+								<span>Кг</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">S</span>
+								<span class="diapers-sizes__weight">4-9</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">M</span>
+								<span class="diapers-sizes__weight">6-12</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">L</span>
+								<span class="diapers-sizes__weight">9-14</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XL</span>
+								<span class="diapers-sizes__weight">12-20</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XXL</span>
+								<span class="diapers-sizes__weight">13-25</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-products__note">
+						<span class="catalog-products__note-main">Среднее количество* подгузников в день для этого размера: 6-8 штук</span>
+						<span class="catalog-products__note-second">*количество может быть индивидуальным</span>
+					</div>
+					<div class="catalog-products__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog-products__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_2">Стандарт</div>
+					<div class="content-block__bg-img content-block__bg-img_green"></div>
+					<div class="catalog-products__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog-products__title h3">Трусики Goo.N<br>Cheerful Baby</h3></a>
+						<span class="catalog-products__subtitle">Японское качество по доступной цене</span>
+					</div>
+					<div class="catalog-products__stars">
+						<div class="catalog-products__stars-set">
+							<ul class="stars">
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item"></li>
+							</ul>
+							<span class="catalog-products__stars-count catalog-products__stars-count_green">4/5</span>
+						</div>
+						<span class="catalog-products__stars-review">На основе 182 отзывов</span>
+					</div>
+					<div class="catalog-products__img-wrap">
+						<a href="#"><img class="catalog-products__img" src="./content/catalog/slider-products/slide3.png"></a>
+					</div>
+					<div class="catalog-products__subslider-wrap">
+						<div class="catalog-products__subslider">
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product3/slide1.png"></a>
+								<div class="catalog-products__subslide-text">
+									Уникальная технология "волшебный гель" способствует быстрому впитыванию
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product3/slide2.png"></a>
+								<div class="catalog-products__subslide-text">
+									Эластичные поясок и манжеты вокруг ножек плотно прилегают и защищают от протеканий
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product3/slide3.png"></a>
+								<div class="catalog-products__subslide-text">
+									Мягкие, как хлопок, трусики дарят ребенку максимальный комфорт
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-products__sizes">
+						<div class="catalog-products__sizes-title">
+							Кликните на нужный вас размер, чтобы получить больше информации
+						</div>
+						<div class="diapers-sizes">
+							<a href="#" class="diapers-sizes__header">
+								<span>Размер</span>
+								<span>Кг</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">M</span>
+								<span class="diapers-sizes__weight">6-11</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">L</span>
+								<span class="diapers-sizes__weight">8-14</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XL</span>
+								<span class="diapers-sizes__weight">11-18</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XXL</span>
+								<span class="diapers-sizes__weight">15-25</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-products__note">
+						<span class="catalog-products__note-main">Среднее количество* подгузников в день для этого размера: 6-8 штук</span>
+						<span class="catalog-products__note-second">*количество может быть индивидуальным</span>
+					</div>
+					<div class="catalog-products__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog-products__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_2">Стандарт</div>
+					<div class="content-block__bg-img content-block__bg-img_green"></div>
+					<div class="catalog-products__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog-products__title h3">Трусики Goo.N<br>Small pack</h3></a>
+						<span class="catalog-products__subtitle">Дышащие трусики Goo.N Small pack теперь в удобном формате!</span>
+					</div>
+					<div class="catalog-products__stars">
+						<div class="catalog-products__stars-set">
+							<ul class="stars stars_green">
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item stars__item_green"></li>
+								<li class="stars__item"></li>
+							</ul>
+							<span class="catalog-products__stars-count catalog-products__stars-count_green">4/5</span>
+						</div>
+						<span class="catalog-products__stars-review">На основе 182 отзывов</span>
+					</div>
+					<div class="catalog-products__img-wrap">
+						<div class="catalog-products__sticker">
+							<div class="catalog-products__sticker-text">Новинка!</div>
+						</div>
+						<a href="#"><img class="catalog-products__img" src="./content/catalog/slider-products/slide4.png"></a>
+					</div>
+					<div class="catalog-products__subslider-wrap">
+						<div class="catalog-products__subslider">
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product4/slide1.png"></a>
+								<div class="catalog-products__subslide-text">
+									Моментально впитывают большое количество жидкости и надежно удерживают влагу внутри
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product4/slide2.png"></a>
+								<div class="catalog-products__subslide-text">
+									Эластичный поясок и высокие манжеты вокруг ножек для комфортного прилегания и защиты от протекания
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product4/slide3.png"></a>
+								<div class="catalog-products__subslide-text">
+									Дизайн трусиков с Лео-Куном превращает смену подгузника в веселое развлечение и помогает стимули- ровать развитие ребенка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-products__sizes">
+						<div class="catalog-products__sizes-title">
+							Кликните на нужный вас размер, чтобы получить больше информации
+						</div>
+						<div class="diapers-sizes">
+							<a href="#" class="diapers-sizes__header">
+								<span>Размер</span>
+								<span>Кг</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">M</span>
+								<span class="diapers-sizes__weight">6-11</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">L</span>
+								<span class="diapers-sizes__weight">8-14</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XL</span>
+								<span class="diapers-sizes__weight">11-18</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-products__note">
+						<span class="catalog-products__note-main">Среднее количество* подгузников в день для этого размера: 6-8 штук</span>
+						<span class="catalog-products__note-second">*количество может быть индивидуальным</span>
+					</div>
+					<div class="catalog-products__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog-products__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_3"><div>Специальная линейка</div></div>
+					<div class="content-block__bg-img content-block__bg-img_violet"></div>
+					<div class="catalog-products__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog-products__title h3">Подгузники Goo.N<br>для маловесных детей</h3></a>
+						<span class="catalog-products__subtitle">Нежные натуральные материалы с витамином Е для дополнительной заботы о коже малыша</span>
+					</div>
+					<div class="catalog-products__stars">
+						<div class="catalog-products__stars-set">
+							<ul class="stars">
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item"></li>
+							</ul>
+							<span class="catalog-products__stars-count catalog-products__stars-count_violet">4/5</span>
+						</div>
+						<span class="catalog-products__stars-review">На основе 182 отзывов</span>
+					</div>
+					<div class="catalog-products__img-wrap">
+						<a href="#"><img class="catalog-products__img" src="./content/catalog/slider-products/slide5.png"></a>
+					</div>
+					<div class="catalog-products__subslider-wrap">
+						<div class="catalog-products__subslider">
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product5/slide1.png"></a>
+								<div class="catalog-products__subslide-text">
+									Ультралегкие подгузники собраны вручную из тщательно отобра- нных и безопасных материалов
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product5/slide2.png"></a>
+								<div class="catalog-products__subslide-text">
+									Эластичный поясок и высокие манжеты вокруг ножек для комфортного прилегания и защиты от протекания
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product5/slide3.png"></a>
+								<div class="catalog-products__subslide-text">
+									Дизайн трусиков с Лео-Куном превращает смену подгузника в веселое развлечение и помогает стимули- ровать развитие ребенка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-products__sizes">
+						<div class="catalog-products__sizes-title">
+							Кликните на нужный вас размер, чтобы получить больше информации
+						</div>
+						<div class="diapers-sizes">
+							<a href="#" class="diapers-sizes__header">
+								<span>Размер</span>
+								<span>Кг</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">5S</span>
+								<span class="diapers-sizes__weight">0-1</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">4S</span>
+								<span class="diapers-sizes__weight">1-2,2</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">3S</span>
+								<span class="diapers-sizes__weight">1,8-3</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-products__note">
+						<span class="catalog-products__note-main">Среднее количество* подгузников в день для этого размера: 6-8 штук</span>
+						<span class="catalog-products__note-second">*количество может быть индивидуальным</span>
+					</div>
+					<div class="catalog-products__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog-products__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_3"><div>Специальная линейка</div></div>
+					<div class="content-block__bg-img content-block__bg-img_violet"></div>
+					<div class="catalog-products__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog-products__title h3">Подгузники-трусики Goo.N Super big</h3></a>
+						<span class="catalog-products__subtitle">Остаются сухими надолго</span>
+					</div>
+					<div class="catalog-products__stars">
+						<div class="catalog-products__stars-set">
+							<ul class="stars">
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item stars__item_violet"></li>
+								<li class="stars__item"></li>
+							</ul>
+							<span class="catalog-products__stars-count catalog-products__stars-count_violet">4/5</span>
+						</div>
+						<span class="catalog-products__stars-review">На основе 182 отзывов</span>
+					</div>
+					<div class="catalog-products__img-wrap">
+						<a href="#"><img class="catalog-products__img" src="./content/catalog/slider-products/slide6.png"></a>
+					</div>
+					<div class="catalog-products__subslider-wrap">
+						<div class="catalog-products__subslider">
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product6/slide1.png"></a>
+								<div class="catalog-products__subslide-text">
+									Уникальный размер подходит в том числе и для детей дошкольного возраста
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product6/slide2.png"></a>
+								<div class="catalog-products__subslide-text">
+									Усиленный впитывающий слой быстро поглощает большое количество жидкости
+								</div>
+							</div>
+							<div class="catalog-products__subslide">
+								<a href="#"><img class="catalog-products__subslide-img" src="./content/catalog/slider-product6/slide3.png"></a>
+								<div class="catalog-products__subslide-text">
+									Высокий, эластичный поясок и двойные оборочки вокруг ножек плотно прилегают к коже, защищая от протеканий
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-products__sizes">
+						<div class="catalog-products__sizes-title">
+							Кликните на нужный вас размер, чтобы получить больше информации
+						</div>
+						<div class="diapers-sizes">
+							<a href="#" class="diapers-sizes__header">
+								<span>Размер</span>
+								<span>Кг</span>
+							</a>
+							<a href="#" class="diapers-sizes__tile diapers-sizes__tile_hover-effect">
+								<span class="diapers-sizes__size">XXl</span>
+								<span class="diapers-sizes__weight">15-35</span>
+							</a>
+						</div>
+					</div>
+					<div class="catalog-products__note">
+						<span class="catalog-products__note-main">Среднее количество* подгузников в день для этого размера: 6-8 штук</span>
+						<span class="catalog-products__note-second">*количество может быть индивидуальным</span>
+					</div>
+					<div class="catalog-products__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-products__custom-buttons catalog-products__custom-buttons_top">
+				<button class="catalog-products__custom-button catalog-products__custom-button_prev">Предыдущий</button>
+				<div class="catalog-products__custom-dots catalog-products__custom-dots_2 custom-dots slider_light-dots"></div>
+				<button class="catalog-products__custom-button catalog-products__custom-button_next">Следующий</button>
+			</div>
+		</section>
+		<section class="catalog-page__table catalog-table container">
+			<div class="catalog-table__inner">
+				<div class="catalog-table__heading">
+					<h2 class="catalog-table__header h2">Таблица размеров подгузников Goo.n</h2>
+					<div class="catalog-table__note">
+						Подбор размера подгузника всегда осуществляется индивидуально в зависимости от комплекции и веса ребенка. Мы рекомендуем переходить на следующий размер за килограмм до последнего, указанного на упаковке
+					</div>
+				</div>
+				<div class="catalog-table__swipe">
+					<div class="catalog-table__swipe-text">
+						Свайпайте, чтобы увидеть всю таблицу размеров
+					</div>
+				</div>
+				<div class="table-size mCustomScrollbar" data-mcs-theme="light" data-mcs-axis="x">
+					<div class="table-size__inner">
+						<div class="table-size__header">
+							<div class="table-size__header-first-cell">Вес (кг)</div>
+							<div class="table-size__header-cell">0</div>
+							<div class="table-size__header-cell">1</div>
+							<div class="table-size__header-cell">3</div>
+							<div class="table-size__header-cell">4</div>
+							<div class="table-size__header-cell">6</div>
+							<div class="table-size__header-cell">8</div>
+							<div class="table-size__header-cell">10</div>
+							<div class="table-size__header-cell">12</div>
+							<div class="table-size__header-cell">14</div>
+							<div class="table-size__header-cell">25</div>
+							<div class="table-size__header-cell">35</div>
+						</div>
+						<div class="table-size__body">
+							<div class="table-size__first-col">
+								<div class="table-size__first-col-cell table-size__first-col-cell_1">Подгузники</div>
+								<div class="table-size__first-col-cell table-size__first-col-cell_2">Подгузники - трусики</div>
+							</div>
+							<div class="table-size__main-content">
+								<div class="table-size__row">
+									<a href="http://vs418.ailove.ru/catalog/podguzniki-goo-n-dlya-malovesnykh-detey/?v=39">
+										<div class="table-size__row-header">
+											<div class="table-size__img-wrap">
+												<img class="table-size__img" src="./content/catalog/table/img1.png">
+											</div>
+											<div class="table-size__row-title-wrap">
+												<div class="table-size__row-title table-size__row-title_violet">Специальная линейка</div>
+												<div class="table-size__row-subtitle">Для детей с малым весом</div>
+											</div>
+										</div>
+									</a>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_violet
+															table-size__badge_vertical_top
+															table-size__badge_horizont_left"
+										>
+											5s (0-1кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_violet
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left"
+										>
+											4s (1-2,2кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_violet
+															table-size__badge_vertical_bottom
+															table-size__badge_horizont_right"
+										>
+											3s (1,8-3кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+								</div>
+								<div class="table-size__row">
+									<a href="http://vs418.ailove.ru/catalog/podguzniki-goo-n/?v=47">
+										<div class="table-size__row-header">
+										<div class="table-size__img-wrap">
+											<img class="table-size__img" src="./content/catalog/table/img2.png">
+										</div>
+										<div class="table-size__row-title-wrap">
+											<div class="table-size__row-title table-size__row-title_orange">Премиальная линейка</div>
+											<div class="table-size__row-subtitle">Goo.N</div>
+										</div>
+									</div>
+									</a>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_top
+															table-size__badge_horizont_center"
+										>
+											NB (~5кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_position_center
+															table-size__badge_width_161"
+										>
+											s (4-8кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_bottom
+															table-size__badge_horizont_left-40
+															table-size__badge_width_174"
+										>
+											m (6-11кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left-8
+															table-size__badge_width_174"
+										>
+											l (9-14кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_top
+															table-size__badge_horizont_center
+															table-size__badge_width_116"
+										>
+											xl (12-20кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+								</div>
+								<div class="table-size__row">
+									<a href="http://vs418.ailove.ru/catalog/podguzniki-trusiki-goo-n/?v=71">
+										<div class="table-size__row-header">
+										<div class="table-size__img-wrap">
+											<img class="table-size__img" src="./content/catalog/table/img3.png">
+										</div>
+										<div class="table-size__row-title-wrap">
+											<div class="table-size__row-title table-size__row-title_orange">Премиальная линейка</div>
+											<div class="table-size__row-subtitle">Goo.N</div>
+										</div>
+									</div>
+									</a>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_top
+															table-size__badge_horizont_center
+															table-size__badge_width_174"
+										>
+											s (4-9кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left-40
+															table-size__badge_width_228"
+										>
+											m (6-12кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_vertical_top
+															table-size__badge_horizont_left-8
+															table-size__badge_width_174"
+										>
+											l (9-14кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_orange
+															table-size__badge_position_center"
+										>
+											xl (12-20кг)
+										</div>
+										<div class="table-size__badge
+														table-size__badge_bg_orange
+														table-size__badge_vertical_bottom
+														table-size__badge_horizont_left
+														table-size__badge_width_116"
+										>
+											xxl (13-25кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+								</div>
+								<div class="table-size__row">
+									<a href="http://vs418.ailove.ru/catalog/trusiki-goo-n-cheerful-baby/?v=44">
+										<div class="table-size__row-header">
+										<div class="table-size__img-wrap">
+											<img class="table-size__img" src="./content/catalog/table/img4.png">
+										</div>
+										<div class="table-size__row-title-wrap">
+											<div class="table-size__row-title table-size__row-title_green">СТАНДАРТНАЯ линейка Goo.N</div>
+											<div class="table-size__row-subtitle">Cheerful Baby</div>
+										</div>
+									</div>
+									</a>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left-40
+															table-size__badge_width_181"
+										>
+											m (6-11кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_top
+															table-size__badge_horizont_left-8
+															table-size__badge_width_174"
+										>
+											l (8-14кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left8
+															table-size__badge_width_158"
+										>
+											xl (11-18кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_bottom
+															table-size__badge_horizont_left
+															table-size__badge_width_116"
+										>
+											xxl (13-25кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+								</div>
+								<div class="table-size__row">
+									<a href="http://vs418.ailove.ru/catalog/trusiki-goo-n-small-pack/?v=43">
+										<div class="table-size__row-header">
+										<div class="table-size__img-wrap">
+											<img class="table-size__img" src="./content/catalog/table/img5.png">
+										</div>
+										<div class="table-size__row-title-wrap">
+											<div class="table-size__row-title table-size__row-title_green">СТАНДАРТНАЯ линейка Goo.N</div>
+											<div class="table-size__row-subtitle">Cheerful Baby</div>
+										</div>
+									</div>
+									</a>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left-40
+															table-size__badge_width_181"
+										>
+											m (6-11кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_top
+															table-size__badge_horizont_left-8
+															table-size__badge_width_174"
+										>
+											l (8-14кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left8
+															table-size__badge_width_158"
+										>
+											xl (11-18кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_green
+															table-size__badge_vertical_bottom
+															table-size__badge_horizont_left
+															table-size__badge_width_116"
+										>
+											xxl (13-25кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+								</div>
+								<div class="table-size__row">
+									<a href="http://vs418.ailove.ru/catalog/podguzniki-trusiki-goo-n-super-big/?v=42">
+										<div class="table-size__row-header">
+										<div class="table-size__img-wrap">
+											<img class="table-size__img" src="./content/catalog/table/img6.png">
+										</div>
+										<div class="table-size__row-title-wrap">
+											<div class="table-size__row-title table-size__row-title_violet">СПЕЦИАЛЬНАЯ линейка Goo.N</div>
+											<div class="table-size__row-subtitle">Super Big</div>
+										</div>
+									</div>
+									</a>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell"></div>
+									<div class="table-size__row-cell">
+										<div class="table-size__badge
+															table-size__badge_bg_violet
+															table-size__badge_vertical_center
+															table-size__badge_horizont_left-40
+															table-size__badge_width_158"
+										>
+											Xxl (13-25кг)
+										</div>
+									</div>
+									<div class="table-size__row-cell"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-how-right container">
+			<div class="catalog-how-right__inner">
+				<div class="catalog-how-right__heading">
+					<h2 class="catalog-how-right__header h2">Как правильно надевать</h2>
+				</div>
+				<div class="catalog-how-right__slider slider slider_light-dots">
+					<div class="catalog-how-right__slide">
+						<div class="catalog-how-right__slide-inner">
+							<p class="catalog-how-right__slide-header">подгузники</p>
+							<div class="catalog-how-right__slide-list">
+								<div class="catalog-how-right__slide-img-wrap">
+									<img class="catalog-how-right__slide-img" src="./content/catalog/slider-how-right/slide1.png">
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">1</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide1/img1.png">
+									<div class="catalog-how-right__slide-item-text">
+										Разворачиваем подгузник и расправляем внутренние бортики
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">2</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide1/img2.png">
+									<div class="catalog-how-right__slide-item-text">
+										Положите подгузник под ребенка так, чтобы его задняя часть находилась немного выше пупка
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">3</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide1/img3.png">
+									<div class="catalog-how-right__slide-item-text">
+										Расправьте поясок
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">4</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide1/img4.png">
+									<div class="catalog-how-right__slide-item-text">
+										Зафиксируйте липучки симметрично
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">5</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide1/img5.png">
+									<div class="catalog-how-right__slide-item-text">
+										Расправьте оборочки. Готово!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-how-right__slide">
+						<div class="catalog-how-right__slide-inner">
+							<p class="catalog-how-right__slide-header">трусики</p>
+							<div class="catalog-how-right__slide-list">
+								<div class="catalog-how-right__slide-img-wrap">
+									<img class="catalog-how-right__slide-img catalog-how-right__slide-img_2" src="./content/catalog/slider-how-right/slide2.png">
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">1</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide2/img1.png">
+									<div class="catalog-how-right__slide-item-text">
+										Растяните поясок руками изнутри трусиков
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">2</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide2/img2.png">
+									<div class="catalog-how-right__slide-item-text">
+										Наденьте трусики на ребенка
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">3</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide2/img3.png">
+									<div class="catalog-how-right__slide-item-text">
+										Подтяните поясок
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">4</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide2/img4.png">
+									<div class="catalog-how-right__slide-item-text">
+										Расправьте манжетики вокруг ножек. Готово!
+									</div>
+								</div>
+								<div class="catalog-how-right__slide-item">
+									<div class="catalog-how-right__slide-item-corner">5</div>
+									<img class="catalog-how-right__slide-item-img" src="./content/catalog/slider-how-right/slide2/img5.png">
+									<div class="catalog-how-right__slide-item-text">
+										Трусики легко снимать, разорвав их по шву сбоку
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-faq container">
+			<div class="catalog-faq__inner">
+				<div class="catalog-faq__heading">
+					<h2 class="catalog-faq__header h2">часто задаваемые вопросы</h2>
+				</div>
+				<!-- Слайдер для дестктопа и планшета -->
+				<div class="catalog-faq__slider catalog-faq__slider_1rows slider slider_light-dots">
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Как часто нужно<br>менять подгузник</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Почему появились опрелости или аллергическая реакция после использования подгузника?</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Еще какой-нибудь вопрос 1</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Еще какой-нибудь вопрос 2</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+				<!-- Слайдер для мобильной версии -->
+				<div class="catalog-faq__slider catalog-faq__slider_2rows slider slider_light-dots">
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Как часто нужно<br>менять подгузник</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Почему появились опрелости или аллергическая реакция после использования подгузника?</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Еще какой-нибудь вопрос 1</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+					<div>
+						<label class="catalog-faq__slide">
+							<input class="catalog-faq__slide-checkbox" type="checkbox">
+							<div class="catalog-faq__slide-inner">
+								<div class="catalog-faq__question">
+									<p>Еще какой-нибудь вопрос 2</p>
+								</div>
+								<div class="catalog-faq__answer">
+									<p class="catalog-faq__answer-text">
+										Основные причины протекания подгузника:<br><br>
+										1. Объем мочи превысил объем впитывания.<br>
+										2. Из-за чрезмерной подвижности между ножками ребенка и надетым подгузником или между талией и подгузником может образоваться зазор.<br><br>
+										Несмотря на то, что подгузник еще может впитать жидкость, он протекает по краям.Чтобы избежать протеканий, нужно выбирать подгузник правильного размера, правильно его надевать, а также сделать все возможное, чтобы не образовался подобный зазор.
+									</p>
+								</div>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-page__discount discount">
+			<div class="container">
+				<div class="discount__inner">
+					<input id="discount-toggle" class="discount__toggle-checkbox" type="checkbox">
+					<a href="#" class="discount__more-discounts btn btn_color_still btn_color_still-1">Больше скидок</a>
+					<div class="discount__heading">
+						<h2 class="discount__header h2">Акции и скидки</h2>
+						<label for="discount-toggle" class="discount__toggler">
+							<div class="discount__toggler-item discount__toggler-item-1 discount__toggler-actions">Акции</div>
+							<div class="discount__toggler-item discount__toggler-item-2 discount__toggler-contest">Конкурсы</div>
+						</label>
+					</div>
+					<div class="discount__content row">
+						<div class="col-sm-6 col-md-7">
+							<div class="discount__slider discount__slider-1 slider slider_light-dots">
+								<a href="#" class="discount__slide">
+									<img class="discount__slide-img" src="./content/slider-discount/slide1.jpg">
+								</a>
+								<a href="#" class="discount__slide">
+									<img class="discount__slide-img" src="./content/slider-discount/slide1.jpg">
+								</a>
+								<a href="#" class="discount__slide">
+									<img class="discount__slide-img" src="./content/slider-discount/slide1.jpg">
+								</a>
+							</div>
+							<div class="discount__slider-wrap">
+								<div class="discount__slider discount__slider-2 slider slider_light-dots">
+									<a href="#" class="discount__slide">
+										<img class="discount__slide-img" src="./content/slider-discount/slide1.jpg">
+									</a>
+									<a href="#" class="discount__slide">
+										<img class="discount__slide-img" src="./content/slider-discount/slide1.jpg">
+									</a>
+									<a href="#" class="discount__slide">
+										<img class="discount__slide-img" src="./content/slider-discount/slide1.jpg">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-5">
+							<form class="discount__form">
+								<span class="discount__form-title">Узнавай<br>об акциях первым</span>
+								<span class="discount__form-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </span>
+								<input class="discount__form-input input input-text" type="email" required placeholder="E-mail">
+								<button class="discount__form-btn btn btn_color_bright-1" type="submit">Подписаться</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="where-buy">
+			<div class="container">
+				<div class="where-buy__inner">
+					<h2 class="where-buy__header h2 h2_dark">Где купить</h2>
+					<div class="where-buy__slider slider slider_dark-dots">
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide1.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide2.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide4.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide1.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+								<img class="where-buy__img" src="./content/slider-where-buy/slide2.png">
+							</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide4.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide1.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide2.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide4.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy__slide">
+							<div class="where-buy__slide-inner">
+								<a class="where-buy__slide-link" href="#">
+									<img class="where-buy__img" src="./content/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="where-buy__all-store btn btn_color_still btn_color_still-2">Все магазины</a>
+				</div>
+			</div>
+		</section>
+		<section class="articles container">
+			<div class="articles__heading">
+				<h2 class="articles__header h2">Статьи </h2>
+				<a class="articles__more btn btn_color_still btn_color_still-1">Больше статей</a>
+			</div>
+			<div class="articles__slider slider slider_light-dots">
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide1.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">Беременность</a>
+					<div class="articles__slide-text">
+						<p>
+							Поздравляем, вы скоро станете мамой! Беременность - волшебное состояние, которое влияет на физическое и эмоциональное состояние мамы. Читайте наши статьи, где мы подскажем, как позаботиться о своем здоровье и в полной мере насладиться ожиданием малыша!
+						</p>
+					</div>
+				</div>
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide2.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">Новорожденный</a>
+					<div class="articles__slide-text">
+						<p>
+							Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus.
+						</p>
+					</div>
+				</div>
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide3.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">До года</a>
+					<div class="articles__slide-text">
+						<p>
+							Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus.
+						</p>
+					</div>
+				</div>
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide4.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">От года до трех лет</a>
+					<div class="articles__slide-text">
+						<p>
+							Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe container">
+			<div class="subscribe__inner">
+				<img class="subscribe__letter" src="./img/b-subscribe/letter.svg">
+				<div class="subscribe__heading">
+					<img class="subscribe__icon" src="./img/b-subscribe/newspaper.svg">
+					<div class="subscribe__header">
+						<div class="subscribe__title">Узнавай о новых статьях первым</div>
+						<div class="subscribe__subtitle">Lorem ipsum dolor sit amet, consectetue.</div>
+					</div>
+				</div>
+				<form class="subscribe__form">
+					<input class="subscribe__form-email input input-text" type="email" required placeholder="E-mail">
+					<button class="subscribe__form-submit btn btn_color_bright-1" type="submit">Подписаться</button>
+				</form>
+			</div>
+		</section>
+	</div>
+</main>
+<footer class="footer">
+	<div class="footer__inner container">
+		<div class="row">
+			<div class="col-sm-3 col-md-2">
+				<a class="footer__logo-wrap" href="./home.html">
+					<img class="footer__logo" src="./img/logo.png">
+				</a>
+			</div>
+			<div class="footer__social-wrap col-sm-12 col-md-4">
+				<div class="footer__social-set">
+					<span class="footer__social-title">Присоединяйтесь!</span>
+					<div class="footer__social social">
+						<div class="social__title">Россия</div>
+						<div class="social__set">
+							<a href="https://www.instagram.com/goonrussia/" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_insta"></div>
+							</a>
+							<a href="https://vk.com/goonrussia" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_vk"></div>
+							</a>
+							<a href="https://www.facebook.com/goonrussia" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_fb"></div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__social social">
+						<div class="social__title">Казахстан</div>
+						<div class="social__set">
+							<a href="https://www.instagram.com/goon_kazakhstan/" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_insta"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 col-md-5">
+				<nav class="footer__menu">
+					<a class="footer__menu-item" href="./catalog.html">Каталог</a>
+					<a class="footer__menu-item" href="./reviews.html">Отзывы</a>
+					<a class="footer__menu-item" href="./discount.html">Акции и где купить</a>
+					<a class="footer__menu-item" href="./articles.html">Статьи</a>
+					<a class="footer__menu-item" href="./about.html">О нас</a>
+				</nav>
+			</div>
+			<div class="col-12 col-md-7">
+				<div class="footer__warning">
+					<p hidden>Посещение нашего сайта и использование представленной на нем информации регулируются Правовыми положениями. Пожалуйста, ознакомьтесь с нашей Политикой конфиденциальности.</p>
+				</div>
+				<div class="footer__copyright">
+					<p>© 2020. Все права защищены</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/p-catalog.min.js"></script>
+
+</body>
+</html>
