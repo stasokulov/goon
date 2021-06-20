@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Акции и промо</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/libs/bootstrap.css">
+	<link rel="stylesheet" href="./css/libs/slick.css">
+	<link rel="stylesheet" href="./css/libs/slick-theme.css">
+	<link rel="stylesheet" href="./css/libs/simplebar.css">
+	<link rel="stylesheet" href="./css/libs/swiper.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/libs/jquery.smoothscroll.js"></script>
+	<script src="./js/libs/slick.min.js"></script>
+	<script src="./js/libs/jquery.switchPopup.js"></script>
+	<script src="./js/libs/swiper.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src='js/p-catalog.js'></script>
+	<link rel='stylesheet' href='scss/_p-article.scss'>
+</head>
+<body>
+<header class="header container">
+	<div class="header__content">
+		<a href="./home.html">
+			<img class="header__logo" src="./img/logo.png">
+		</a>
+		<nav class="header__nav">
+			<a class="header__nav-item" href="./catalog.html">Каталог</a>
+			<a class="header__nav-item" href="./reviews.html">Отзывы</a>
+			<a class="header__nav-item" href="./discount.html">Акции и где купить</a>
+			<a class="header__nav-item" href="./articles.html">Статьи</a>
+			<a class="header__nav-item" href="./about.html">О бренде</a>
+		</nav>
+		<div class="header__social social">
+			<div class="social__title">Мы в социальных сетях</div>
+			<div class="social__set">
+				<a href="https://www.instagram.com/goonrussia/" target="blank" class="social__icon-wrap">
+					<div class="social__icon social__icon_insta"></div>
+				</a>
+				<a href="https://vk.com/goonrussia" target="blank" class="social__icon-wrap">
+					<div class="social__icon social__icon_vk"></div>
+				</a>
+				<a href="https://www.facebook.com/goonrussia" target="blank" class="social__icon-wrap">
+					<div class="social__icon social__icon_fb"></div>
+				</a>
+			</div>
+		</div>
+		<div class="header__burger js-tgl-dropdown-menu">
+			<button class="burger"></button>
+			<button class="burger-close"></button>
+		</div>
+	</div>
+</header>
+<main>
+	<nav class="breadcrumb container">
+		<a class="breadcrumb__item breadcrumb__item_first" href="./home.html">Главная</a>
+		<a class="breadcrumb__item" href="./discount.html">Акции и где купить</a>
+	</nav>
+	<div class="discount-page">
+		<section class="discount-filters container">
+			<input id="discount-toggle" class="discount-filters__toggle-checkbox" type="checkbox">
+			<div class="discount-filters__dashboard">
+				<h1 class="discount-filters__header h1">Акции и промо</h1>
+				<label for="discount-toggle" class="discount-filters__toggler">
+					<div class="discount-filters__toggler-item discount-filters__toggler-item-1 discount-filters__toggler-actions">Акции</div>
+					<div class="discount-filters__toggler-item discount-filters__toggler-item-2 discount-filters__toggler-contest">Конкурсы</div>
+				</label>
+				<div class="discount-filters__selects">
+					<select class="discount-filters__select input select select_light">
+						<option disabled selected>Продукт</option>
+						<option value="Эта строка отправится на сервер">Длинная строка, которая не влазит по ширине</option>
+						<option value="Эта строка отправится на сервер">2</option>
+						<option value="Эта строка отправится на сервер">3</option>
+					</select>
+					<select class="discount-filters__select input select select_light">
+						<option disabled selected>Страна</option>
+						<option value="Эта строка отправится на сервер">1</option>
+						<option value="Эта строка отправится на сервер">2</option>
+						<option value="Эта строка отправится на сервер">3</option>
+					</select>
+					<select class="discount-filters__select input select select_light">
+						<option disabled selected>Магазин</option>
+						<option value="Эта строка отправится на сервер">Длинная строка, которая не влазит по ширине</option>
+						<option value="Эта строка отправится на сервер">2</option>
+						<option value="Эта строка отправится на сервер">3</option>
+					</select>
+				</div>
+			</div>
+			<div class="discount-filters__result">
+				<div class="discount-filters__slider discount-filters__slider-1">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-1.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-2.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-3.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-4.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-1.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-2.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-3.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider1/slide1-4.png">
+							</a>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="discount-filters__slider discount-filters__slider-2">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider2/slide1.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider2/slide2.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider2/slide3.png">
+							</a>
+							<a href="#" class="discount-filters__slide swiper-slide">
+								<img class="discount-filters__slide_img" src="./content/discount/slider2/slide4.png">
+							</a>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+		<section class="discount-page__subscribe_first subscribe container">
+			<div class="subscribe__inner">
+				<img class="subscribe__letter" src="./img/b-subscribe/letter.svg">
+				<div class="subscribe__heading">
+					<img class="subscribe__icon" src="./img/b-subscribe/star.svg">
+					<div class="subscribe__header">
+						<div class="subscribe__title">Узнавай о новых статьях первым</div>
+						<div class="subscribe__subtitle">Lorem ipsum dolor sit amet, consectetue.</div>
+					</div>
+				</div>
+				<form class="subscribe__form">
+					<input class="subscribe__form-email input input-text" type="email" required placeholder="E-mail">
+					<button class="subscribe__form-submit btn btn_color_bright-1" type="submit">Подписаться</button>
+				</form>
+			</div>
+		</section>
+		<section class="discount-page__where-buy where-buy-page">
+			<div class="container">
+				<div class="where-buy-page__inner">
+					<h2 class="where-buy-page__header h2 h2_dark">Где купить</h2>
+					<div class="where-buy-page__slider where-buy-page__slider_land1 slider slider_dark-dots" data-select="land1">
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide1.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide2.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide3.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide4.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide5.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide6.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide7.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide8.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide9.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide10.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide11.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide12.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide13.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide14.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide15.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide16.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide17.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide18.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide19.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide20.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide21.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide22.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide23.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="where-buy-page__slider where-buy-page__slider_land2 where-buy-page__slider_hidden slider slider_dark-dots" data-select="land2">
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide19.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide20.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide21.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="where-buy-page__slider where-buy-page__slider_land3 where-buy-page__slider_hidden slider slider_dark-dots" data-select="land3">
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide21.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide22.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide23.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="where-buy-page__slider where-buy-page__slider_land4 where-buy-page__slider_hidden slider slider_dark-dots" data-select="land4">
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide19.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide20.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide21.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide22.png">
+								</a>
+							</div>
+						</div>
+						<div class="where-buy-page__slide">
+							<div class="where-buy-page__slide-inner">
+								<a class="where-buy-page__slide-link" href="#">
+									<img class="where-buy-page__img" src="./content/discount/slider-where-buy/slide23.png">
+								</a>
+							</div>
+						</div>
+					</div>
+					<select class="where-buy-page__country input select">
+						<option value="land1" disabled selected>Страна</option>
+						<option value="land1">Россия</option>
+						<option value="land2">Нарния</option>
+						<option value="land3">Средиземье</option>
+						<option value="land4">Страна Оз</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		<section class="discount-page__catalog catalog container">
+			<div class="catalog__heading">
+				<h2 class="catalog__main-header h2">Каталог</h2>
+				<a class="catalog__full btn btn_color_still btn_color_still-1" href='#'>Полный каталог</a>
+			</div>
+			<div class="catalog__slider slider slider_light-dots">
+				<div class="catalog__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_1">Премиум</div>
+					<div class="content-block__bg-img content-block__bg-img_type_1 content-block__bg-img_orange"></div>
+					<div class="catalog__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog__title h3">Подгузники GOO.N</h3></a>
+						<span class="catalog__subtitle">Остаются сухими надолго</span>
+					</div>
+					<div class="catalog__img-wrap">
+						<a href="#"><img class="catalog__img" src="./content/catalog/slider-products/slide1.png"></a>
+					</div>
+					<div class="catalog__subslider-wrap">
+						<div id="catalog_prod-1" class="catalog__subslider">
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product1/slide1.png"></a>
+								<div class="catalog__subslide-text">
+									Новый быстро впиты- вающий суперабсорбент обеспечивает сухость и комфорт коже малыша надолго
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product1/slide2.png"></a>
+								<div class="catalog__subslide-text">
+									Рельефная поверхность SARA SARA способствует циркуляции воздуха и предотвращает натирания и опрелости
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product1/slide3.png"></a>
+								<div class="catalog__subslide-text">
+									Воздухопроводимые материалы позволяют коже дышать даже после наполнения подгузника
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__more">
+						<a href="#" class="catalog__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_1">Премиум</div>
+					<div class="content-block__bg-img content-block__bg-img_type_1 content-block__bg-img_orange"></div>
+					<div class="catalog__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog__title h3">Подгузники-трусики Goo.N</h3></a>
+						<span class="catalog__subtitle">Остаются сухими надолго</span>
+					</div>
+					<div class="catalog__img-wrap">
+						<a href="#"><img class="catalog__img" src="./content/catalog/slider-products/slide2.png"></a>
+					</div>
+					<div class="catalog__subslider-wrap">
+						<div class="catalog__subslider">
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product2/slide1.png"></a>
+								<div class="catalog__subslide-text">
+									Высокий эластичный поясок обеспечивает лучшую посадку, а мягкие резиночки не давят на ножки и животик
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product1/slide2.png"></a>
+								<div class="catalog__subslide-text">
+									Новый быстро впиты- вающий суперабсорбент обеспечивает сухость и комфорт коже малыша надолго
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product1/slide3.png"></a>
+								<div class="catalog__subslide-text">
+									Высокие манжеты вокруг ножек плотно прилегают, обеспечивая дополни- тельную защиту от протеканий
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_2">Стандарт</div>
+					<div class="content-block__bg-img content-block__bg-img_type_1 content-block__bg-img_green"></div>
+					<div class="catalog__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog__title h3">Трусики Goo.N<br>Cheerful Baby</h3></a>
+						<span class="catalog__subtitle">Японское качество по доступной цене</span>
+					</div>
+					<div class="catalog__img-wrap">
+						<a href="#"><img class="catalog__img" src="./content/catalog/slider-products/slide3.png"></a>
+					</div>
+					<div class="catalog__subslider-wrap">
+						<div class="catalog__subslider">
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product3/slide1.png"></a>
+								<div class="catalog__subslide-text">
+									Уникальная технология "волшебный гель" способствует быстрому впитыванию
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product3/slide2.png"></a>
+								<div class="catalog__subslide-text">
+									Эластичные поясок и манжеты вокруг ножек плотно прилегают и защищают от протеканий
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product3/slide3.png"></a>
+								<div class="catalog__subslide-text">
+									Мягкие, как хлопок, трусики дарят ребенку максимальный комфорт
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__more">
+						<a href="#" class="catalog__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_2">Стандарт</div>
+					<div class="content-block__bg-img content-block__bg-img_type_1 content-block__bg-img_green"></div>
+					<div class="catalog__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog__title h3">Трусики Goo.N<br>Small pack</h3></a>
+						<span class="catalog__subtitle">Дышащие трусики Goo.N Small pack теперь в удобном формате!</span>
+					</div>
+					<div class="catalog__img-wrap">
+						<a href="#"><img class="catalog__img" src="./content/catalog/slider-products/slide4.png"></a>
+					</div>
+					<div class="catalog__subslider-wrap">
+						<div class="catalog__subslider">
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product4/slide1.png"></a>
+								<div class="catalog__subslide-text">
+									Моментально впитывают большое количество жидкости и надежно удерживают влагу внутри
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product4/slide2.png"></a>
+								<div class="catalog__subslide-text">
+									Эластичный поясок и высокие манжеты вокруг ножек для комфортного прилегания и защиты от протекания
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product4/slide3.png"></a>
+								<div class="catalog__subslide-text">
+									Дизайн трусиков с Лео-Куном превращает смену подгузника в веселое развлечение и помогает стимули- ровать развитие ребенка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__more">
+						<a href="#" class="catalog__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_3"><div>Специальная линейка</div></div>
+					<div class="content-block__bg-img content-block__bg-img_type_1 content-block__bg-img_violet"></div>
+					<div class="catalog__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog__title h3">Подгузники Goo.N<br>для маловесных детей</h3></a>
+						<span class="catalog__subtitle">Нежные натуральные материалы с витамином Е для дополнительной заботы о коже малыша</span>
+					</div>
+					<div class="catalog__img-wrap">
+						<a href="#"><img class="catalog__img" src="./content/catalog/slider-products/slide5.png"></a>
+					</div>
+					<div class="catalog__subslider-wrap">
+						<div class="catalog__subslider">
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product5/slide1.png"></a>
+								<div class="catalog__subslide-text">
+									Ультралегкие подгузники собраны вручную из тщательно отобра- нных и безопасных материалов
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product5/slide2.png"></a>
+								<div class="catalog__subslide-text">
+									Эластичный поясок и высокие манжеты вокруг ножек для комфортного прилегания и защиты от протекания
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product5/slide3.png"></a>
+								<div class="catalog__subslide-text">
+									Дизайн трусиков с Лео-Куном превращает смену подгузника в веселое развлечение и помогает стимули- ровать развитие ребенка
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__more">
+						<a href="#" class="catalog__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+				<div class="catalog__slide content-block">
+					<div class="content-block__corner-marker content-block__corner-marker_bg_3"><div>Специальная линейка</div></div>
+					<div class="content-block__bg-img content-block__bg-img_type_1 content-block__bg-img_violet"></div>
+					<div class="catalog__header">
+						<a class="link-nounderline" href="#"><h3 class="catalog__title h3">Подгузники-трусики Goo.N Super big</h3></a>
+						<span class="catalog__subtitle">Остаются сухими надолго</span>
+					</div>
+					<div class="catalog__img-wrap">
+						<a href="#"><img class="catalog__img" src="./content/catalog/slider-products/slide6.png"></a>
+					</div>
+					<div class="catalog__subslider-wrap">
+						<div class="catalog__subslider">
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product6/slide1.png"></a>
+								<div class="catalog__subslide-text">
+									Уникальный размер подходит в том числе и для детей дошкольного возраста
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product6/slide2.png"></a>
+								<div class="catalog__subslide-text">
+									Усиленный впитывающий слой быстро поглощает большое количество жидкости
+								</div>
+							</div>
+							<div class="catalog__subslide">
+								<a href="#"><img class="catalog__subslide-img" src="./content/catalog/slider-product6/slide3.png"></a>
+								<div class="catalog__subslide-text">
+									Высокий, эластичный поясок и двойные оборочки вокруг ножек плотно прилегают к коже, защищая от протеканий
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__more">
+						<a href="#" class="catalog-products__more-button btn btn_color_bright-1">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="articles container">
+			<div class="articles__heading">
+				<h2 class="articles__header h2">Статьи </h2>
+				<a class="articles__more btn btn_color_still btn_color_still-1">Больше статей</a>
+			</div>
+			<div class="articles__slider slider slider_light-dots">
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide1.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">Беременность</a>
+					<div class="articles__slide-text">
+						<p>
+							Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit.
+						</p>
+					</div>
+				</div>
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide2.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">Новорожденный</a>
+					<div class="articles__slide-text">
+						<p>
+							Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus.
+						</p>
+					</div>
+				</div>
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide3.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">До года</a>
+					<div class="articles__slide-text">
+						<p>
+							Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus. Сonsectetuer adipiscing elit. Aenean commodo sociis ligula eget dolor. Cum sociis penatibus.
+						</p>
+					</div>
+				</div>
+				<div class="articles__slide">
+					<div class="articles__slide-img-wrap">
+						<img class="articles__slide-img" src="./content/catalog/slider-articles/slide4.jpg">
+					</div>
+					<a class="articles__slide-link" href="#">От года до трех лет</a>
+					<div class="articles__slide-text">
+						<p>
+							Первые три года жизни крохи особенно важны для его развития и воспитания. Он столькому учится за этот период! Ходить, говорить, есть взрослую еду и использовать горшок! Столько вопросов возникает у мам маленьких непосед. Наши статьи дадут на них ответы и разложат по полочкам всю необходимую информацию.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="discount-page__subscribe_last subscribe container">
+			<div class="subscribe__inner">
+				<img class="subscribe__letter" src="./img/b-subscribe/letter.svg">
+				<div class="subscribe__heading">
+					<img class="subscribe__icon" src="./img/b-subscribe/newspaper.svg">
+					<div class="subscribe__header">
+						<div class="subscribe__title">Узнавай о новых статьях первым</div>
+						<div class="subscribe__subtitle">Lorem ipsum dolor sit amet, consectetue.</div>
+					</div>
+				</div>
+				<form class="subscribe__form">
+					<input class="subscribe__form-email input input-text" type="email" required placeholder="E-mail">
+					<button class="subscribe__form-submit btn btn_color_bright-1" type="submit">Подписаться</button>
+				</form>
+			</div>
+		</section>
+	</div>
+</main>
+<footer class="footer">
+	<div class="footer__inner container">
+		<div class="row">
+			<div class="col-sm-3 col-md-2">
+				<a class="footer__logo-wrap" href="./home.html">
+					<img class="footer__logo" src="./img/logo.png">
+				</a>
+			</div>
+			<div class="footer__social-wrap col-sm-12 col-md-4">
+				<div class="footer__social-set">
+					<span class="footer__social-title">Присоединяйтесь!</span>
+					<div class="footer__social social">
+						<div class="social__title">Россия</div>
+						<div class="social__set">
+							<a href="https://www.instagram.com/goonrussia/" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_insta"></div>
+							</a>
+							<a href="https://vk.com/goonrussia" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_vk"></div>
+							</a>
+							<a href="https://www.facebook.com/goonrussia" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_fb"></div>
+							</a>
+						</div>
+					</div>
+					<div class="footer__social social">
+						<div class="social__title">Казахстан</div>
+						<div class="social__set">
+							<a href="https://www.instagram.com/goon_kazakhstan/" target="blank" class="social__icon-wrap">
+								<div class="social__icon social__icon_insta"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 col-md-5">
+				<nav class="footer__menu">
+					<a class="footer__menu-item" href="./catalog.html">Каталог</a>
+					<a class="footer__menu-item" href="./reviews.html">Отзывы</a>
+					<a class="footer__menu-item" href="./discount.html">Акции и где купить</a>
+					<a class="footer__menu-item" href="./articles.html">Статьи</a>
+					<a class="footer__menu-item" href="./about.html">О нас</a>
+				</nav>
+			</div>
+			<div class="col-12 col-md-7">
+				<div class="footer__warning">
+					<p hidden>Посещение нашего сайта и использование представленной на нем информации регулируются Правовыми положениями. Пожалуйста, ознакомьтесь с нашей Политикой конфиденциальности.</p>
+				</div>
+				<div class="footer__copyright">
+					<p>© 2020. Все права защищены</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/p-discount.js"></script>
+
+</body>
+</html>

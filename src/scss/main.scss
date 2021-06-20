@@ -1,0 +1,26 @@
+@import "vars"; // Импорт переменных всегда первый
+
+@import "fonts"; // Шрифты
+@import "ui"; // Основные элементы
+
+@import "b-header";
+@import "b-breadcrumb";
+@import "b-where-buy";
+@import "b-discount";
+@import "b-subscribe";
+@import "b-send-review";
+@import "b-catalog";
+@import "b-articles";
+@import "b-social";
+@import "b-footer";
+
+@import "p-product";
+@import "p-catalog";
+@import "p-about";
+@import "p-reviews";
+@import "p-review";
+@import "p-discount";
+@import "p-articles";
+@import "p-article";
+@import "p-home";
+@import "p-404";

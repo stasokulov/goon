@@ -1,0 +1,274 @@
+.catalog {
+	position: relative;
+	&__heading {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		@include media(xs) {
+			flex-wrap: wrap;
+		}
+	}
+	&__main-header {
+		@include media(xs) {
+			padding-bottom: 25px;
+		}
+	}
+	&__full {
+		@include media(xs) {
+			width: 100%;
+		}
+	}
+	&__slider {
+		margin-bottom: 0 !important;
+		@include media(xs) {
+			padding-bottom: 86px;
+		}
+		.slick-prev, .slick-next {
+			z-index: 1;
+			background-color: #ffffff;
+			top: auto;
+			&:before {
+				@include media(xs) {
+					width: 15px;
+					height: 25px;
+				}
+			}
+			@include media(sm) {
+				width: 40px;
+				height: 40px;
+			}
+			@include media(xs) {
+				width: 56px;
+				height: 56px;
+				bottom: 0;
+				transform: none;
+			}
+		}
+		.slick-prev {
+			@include media(sm) {
+				left: calc(50% - 40px - 80px);
+			}
+			@include media(xs) {
+				left: 0;
+			}
+		}
+		.slick-next {
+			@include media(sm) {
+				right: calc(50% - 40px - 80px);
+			}
+			@include media(xs) {
+				right: 0;
+			}
+		}
+		.slick-dots {
+			z-index: 0;
+			@include media(xs) {
+				bottom: 56px/2 - 9px/2;
+			}
+		}
+	}
+	&__slide {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-column-gap: 30px;
+		grid-template-areas: "img img img img head head head head head head head head"
+			"img img img img ss   ss   ss   ss   ss   ss   ss   ss"
+			"img img img img more more more more more more more more"
+			"img img img img more more more more more more more more";
+		padding-top: 51px;
+		padding-bottom: 31px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+			@include media(xs) {
+				margin-bottom: 0;
+			}
+		}
+		@include media(sm) {
+			padding-top: 33px;
+			padding-bottom: 31px;
+			padding-left: 14px;
+			padding-right: 14px;
+			grid-template-rows: repeat(5, auto);
+			grid-column-gap: 26px;
+			grid-template-areas: "img img img img head head head head head head head head"
+				"img img img img ss   ss   ss   ss   ss   ss   ss   ss"
+				"img img img img ss   ss   ss   ss   ss   ss   ss   ss"
+				"img img img img more more more more more more more more"
+				"img img img img more more more more more more more more";
+		}
+		@include media(xs) {
+			display: block;
+			padding-top: 53px;
+			padding-bottom: 20px;
+		}
+		&.slick-slide {
+			display: grid;
+			@include media(xs) {
+				display: block;
+			}
+		}
+	}
+	&__img-wrap {
+		grid-area: img;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 39px;
+		z-index: 1;
+		@include media(sm) {
+			padding-top: 35px;
+			padding-bottom: 26px;
+		}
+		@include media(xs) {
+			padding-top: 0;
+			padding-bottom: 40px;
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+	}
+	&__header {
+		grid-area: head;
+		padding-bottom: 26px;
+		@include media(sm) {
+			padding-bottom: 14px;
+		}
+		@include media(xs) {
+			padding-bottom: 12px;
+		}
+	}
+	&__subslider-wrap {
+		grid-area: ss;
+		padding-bottom: 21px;
+		min-height: 135px;
+		@include media(sm) {
+			padding-bottom: 25px;
+		}
+		@include media(xs) {
+			padding-bottom: 71px;
+		}
+	}
+	&__more {
+		grid-area: more;
+		display: flex;
+		justify-content: flex-start;
+		padding-right: 50px;
+		@include media(sm) {
+			justify-content: flex-start;
+			align-items: flex-end;
+			padding-right: 0;
+		}
+	}
+	&__more-button {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&__img {
+		object-fit: contain;
+		height: 100%;
+		width: 100%;
+		max-width: 324px;
+		max-height: 284px;
+		z-index: 1;
+		@include media(xs) {
+			max-width: 234px;
+		}
+	}
+	&__title {
+		margin-bottom: 7px;
+		@include media(sm) {
+			margin-bottom: 12px;
+			font-size: 25px;
+			line-height: 105%;
+		}
+		@include media(xs) {
+			font-size: 28px;
+		}
+	}
+	&__subtitle {
+		font-family: "RotondaC", sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 113.5%;
+		letter-spacing: -0.005em;
+		color: $text_main;
+		@include media(sm) {
+			font-size: 16px;
+		}
+	}
+	&__subslider {
+		display: flex;
+		align-items: flex-start;
+		padding-right: 17px;
+		@include media(sm) {
+			padding-right: 0;
+		}
+		@include media(xs) {
+			display: block;
+			margin-bottom: 0 !important;
+			.slick-dots {
+				bottom: -9px - 22px;
+				li {
+					button {
+						&:before {
+							background-image: url("data:image/svg+xml,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='%23009FE3'/%3E%3C/svg%3E");
+						}
+					}
+				}
+			}
+		}
+	}
+	&__subslide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-right: 10px;
+		width: _col(4);
+		@include media(sm) {
+			flex-direction: column;
+		}
+		@include media(xs) {
+			flex-direction: row;
+			align-items: flex-start;
+			width: _col(12);
+			padding-right: 0;
+			&.slick-slide {
+				display: flex;
+			}
+		}
+	}
+	&__subslide-img {
+		width: 103px;
+		height: 103px;
+		margin-bottom: 10px;
+		@include media(sm) {
+			width: 70px;
+			height: 70px;
+			margin-bottom: 3px;
+		}
+		@include media(xs) {
+			margin-bottom: 0;
+			margin-right: 9px;
+		}
+	}
+	&__subslide-text {
+		text-align: center;
+		font-family: "RotondaC", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 166%;
+		color: $text_main;
+		@include media(sm) {
+			font-size: 13px;
+			line-height: 160%;
+		}
+		@include media(xs) {
+			padding-right: 6px;
+			text-align: left;
+			line-height: 139%;
+		}
+	}
+}

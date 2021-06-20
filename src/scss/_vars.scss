@@ -1,0 +1,62 @@
+// Общие настройки
+$font-formats: ("eot", "woff", "ttf"); // Доступны в snippets - eot, woff2, woff, ttf, svg
+$url-img: "../img"; // Путь к изображениям
+$url-font: "../fonts"; // Путь к шрифтам
+$url-img-libs: "../" + $url-img; // Путь к изображениям (для библиотек)
+$url-font-libs: "../" + $url-font; // Путь к шрифтам (для библиотек)
+
+// Переменные цветов
+$text_main: #3f4260;
+$text_main-light: #ffffff;
+$text_second-1: #b7b9ca;
+$text_second-2: #1770d9;
+$text_second-3: #5bc9f9;
+
+$bg1: #ffffff;
+$bg2: #5bc9f9;
+$bg3: #dff0ff;
+
+$btn_bg1: #e95498;
+$btn_bg1-hover: #d22172;
+$btn_box-shadow1: 0 2px 0 #d22172, 0 21px 18px -7px rgba(233, 84, 152, 0.29);
+
+$btn_bg2: #80bf28;
+$btn_bg2-hover: #9ad548;
+$btn_box-shadow2: 0 2px 0 #6ea81c, 0 21px 18px -7px rgba(128, 191, 40, 0.28);
+
+$btn_bg3: rgba(74, 152, 223, 0.25);
+$btn_bg3-hover: rgba(74, 152, 223, 0.69);
+$btn_bg4: #ffffff;
+
+// Настройки брэкпоинтов (+25 для полосы прокрутки на десктопах)
+// prettier-ignore
+$breakpoints: (
+	//xxs: 0,
+	//xs: 320px,
+	xs: 0,
+	sm: 768px,
+	md: 1200px,
+	lg: 1280px,
+	//xl: 1440px,
+	//xxl: 1920px
+) !default;
+
+// Настройки контейнера
+// prettier-ignore
+$max-widths: (
+	//xxs: 100%,
+	xs: 100%,
+	sm: 100%,
+	md: 1200px,
+	lg: 1201px,
+	xl: 1440px,
+	//xxl: 1920px
+) !default;
+
+$grid-gutter-width: 30px !default; // Отступ между колонками ( сумма падингов одной колонки )
+$grid-columns: 12 !default; // Количество колонок
+
+$header-height: 260px;
+
+// Импорт вспомогательных сниппетов (всегда в конце)
+@import "node_modules/sass-snippets/scss/snippets";

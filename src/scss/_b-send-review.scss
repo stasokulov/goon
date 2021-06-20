@@ -1,0 +1,73 @@
+.send-review {
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow: 0 22px 41px rgba(23, 112, 217, 0.24);
+		border-radius: 17px;
+		background-color: $bg1;
+		padding: 42px 78px 34px 41px;
+		overflow: hidden;
+		@include media(sm) {
+			padding: 38px 31px 34px 43px;
+		}
+		@include media(xs) {
+			padding: 26px 18px 36px;
+		}
+	}
+	&__heading {
+		display: flex;
+		align-items: flex-start;
+		@include b4col(_col(7));
+		@include media(sm) {
+			max-width: 65%;
+			flex: 0 0 65%;
+		}
+		@include media(xs) {
+			flex-wrap: wrap;
+			@include b4col(_col(12));
+			margin-bottom: 30px;
+		}
+	}
+	&__icon {
+		width: 117px;
+		margin-right: 40px;
+		@include media(xs) {
+			width: 56px;
+			margin-bottom: 18px;
+		}
+	}
+	&__title {
+		font-family: "RotondaC", sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 31px;
+		letter-spacing: -0.005em;
+		color: $text_main;
+		margin-bottom: 5px;
+		@include media(sm) {
+			font-size: 25px;
+		}
+		@include media(xs) {
+			font-size: 23px;
+		}
+	}
+	&__subtitle {
+		font-family: "RotondaC", sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 147.69%;
+		letter-spacing: 0.02em;
+		color: $text_main;
+		@include media(sm) {
+			font-size: 13px;
+		}
+	}
+	&__link {
+		min-width: 219px;
+	}
+}
